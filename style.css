@@ -66,8 +66,9 @@ section article {
 }
 
 section img {
-  width: 100%;
+  width: 50%;
   height: auto;
+  padding: 50px;
 }
 
 section h3 {
