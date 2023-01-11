@@ -66,9 +66,11 @@ section article {
 }
 
 section img {
-  width: 50%;
-  height: auto;
-  padding: 45px;
+    position: absolute;
+    right: 100px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
 }
 
 section h3 {
