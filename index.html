@@ -2,30 +2,52 @@
 <html>
   <head>
     <title>My Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>My Blog</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <h2>Recent Posts</h2>
-    <ul>
-      <li>
-        <h3><a href="#">Post Title 1</a></h3>
-        <p>Post summary goes here.</p>
-      </li>
-      <li>
-        <h3><a href="#">Post Title 2</a></h3>
-        <p>Post summary goes here.</p>
-      </li>
-      <li>
-        <h3><a href="#">Post Title 3</a></h3>
-        <p>Post summary goes here.</p>
-      </li>
-    </ul>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h1 class="logo">My Blog</h1>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Recent Posts</h2>
+        <div class="posts">
+          <article>
+            <img src="post1.jpg" alt="Post Image">
+            <h3><a href="post1.html">Post Title 1</a></h3>
+            <p>Post summary goes here.</p>
+            <a href="post1.html" class="button">Read More</a>
+          </article>
+          <article>
+            <img src="post2.jpg" alt="Post Image">
+            <h3><a href="post2.html">Post Title 2</a></h3>
+            <p>Post summary goes here.</p>
+            <a href="post2.html" class="button">Read More</a>
+          </article>
+          <article>
+            <img src="post3.jpg" alt="Post Image">
+            <h3><a href="post3.html">Post Title 3</a></h3>
+            <p>Post summary goes here.</p>
+            <a href="post3.html" class="button">Read More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>Copyright © My Blog</p>
+      </div>
+    </footer>
   </body>
 </html>
