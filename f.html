@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Post Title 1</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mi Blog Animado</title>
+    <style>
+      /* Estilos CSS para las animaciones */
+      .fade-in {
+        animation: fadeIn 1s ease-out;
+      }
+      
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      .slide-up {
+        animation: slideUp 0.5s ease-out;
+      }
+      
+      @keyframes slideUp {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <h1 class="logo">My Blog</h1>
-      </div>
+      <h1 class="fade-in">Mi Blog Animado</h1>
+      <nav class="slide-up">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-    <section>
-      <div class="container">
-        <h2>Post Title 1</h2>
-        <img src="assets/img/perra.jpg" alt="Post Image">
-        <p>Post content goes here.</p>
-        <p>Additional post content goes here.</p>
-        <p>Etc.</p>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <p>Copyright © My Blog</p>
-        <audio autoplay>
-  <source src="v.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-         </audio>
-      </div>
+    <main>
+      <article class="fade-in">
+        <h2>Primer artículo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis augue et dolor placerat, vel pellentesque est molestie. In ornare, justo ut varius pharetra, ipsum nulla rhoncus dui, eu bibendum risus lacus vel purus.</p>
+      </article>
+      <article class="fade-in">
+        <h2>Segundo artículo</h2>
+        <p>Nam suscipit lacus ut ligula vehicula, ac bibendum massa efficitur. Integer eu risus non magna malesuada dictum sit amet sed magna. Fusce ut varius odio, vel feugiat sapien. Vestibulum consectetur tellus nec ligula sagittis, id euismod purus facilisis.</p>
+      </article>
+    </main>
+    <footer class="slide-up">
+      <p>&copy; 2023 Mi Blog Animado</p>
     </footer>
   </body>
 </html>
