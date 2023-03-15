@@ -179,7 +179,7 @@ footer .container {
 }
 
 .tada {
-    animation: tada 0.23s ease-out;
+    animation: tada 1s ease-out;
 }
 
 @keyframes tada {
